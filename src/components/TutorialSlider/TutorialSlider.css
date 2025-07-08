@@ -1,0 +1,129 @@
+.tutorial-slider-sections {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Helvetica Neue', sans-serif;
+    height: auto;
+}
+
+.subtitle {
+    color: #EF9E48;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'DM Sans';
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #0F2137;
+    margin-bottom: 40px;
+    font-family: 'DM Sans';
+
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+.card-image {
+    position: relative;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    background: rgba(255, 255, 255, 0.7);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    color: #333;
+    pointer-events: none;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: left;
+    font-family: 'DM Sans';
+
+}
+
+.rating {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+    font-family: 'DM Sans';
+
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0F2137;
+    margin-bottom: 8px;
+    font-family: 'DM Sans';
+
+}
+
+.watch-info {
+    font-size: 14px;
+    color: #666;
+    font-family: 'DM Sans';
+
+}
+
+.slick-track {
+    display: flex !important;
+    gap: 15px;
+
+}
+
+.slick-slide {
+    height: auto !important;
+    display: flex !important;
+}
+
+.card-image img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .title {
+        font-size: 24px;
+    }
+
+    .card-title {
+        font-size: 15px;
+    }
+
+    .watch-info,
+    .rating {
+        font-size: 13px;
+    }
+}

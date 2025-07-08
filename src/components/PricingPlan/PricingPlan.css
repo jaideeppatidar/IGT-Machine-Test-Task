@@ -1,0 +1,186 @@
+.pricing-container {
+    text-align: center;
+    padding: 3rem 1rem;
+    width: 100%;
+    margin: auto;
+    height: auto;
+}
+
+.plan-heading {
+    color: #EF9E48;
+    font-size: 14px;
+    letter-spacing: 2.1px;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    font-family: 'DM Sans';
+}
+
+.plan-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    font-family: 'DM Sans';
+}
+
+.plan-toggle {
+    justify-content: center;
+    margin-bottom: 2rem;
+    background-color: #F7F8FB;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.toggle-button,
+.toggle-buttons {
+    background-color: #f3f5f7;
+    padding: 0.75rem 1.5rem;
+    font-size: 16px;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    border-radius: 8px;
+    color: #333;
+    font-weight: 500;
+    font-family: 'DM Sans';
+    border: none;
+}
+
+.toggle-buttons.active,
+.toggle-button.active {
+  background-color: #fff;
+  border: 2px solid #00C9A7;
+  color: #00C9A7;
+}
+
+.toggle-button.active {
+    background-color: #fff;
+    border: 2px solid #00C9A7;
+}
+
+.plans {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.plan-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    text-align: left;
+}
+
+.card-body {
+    flex-grow: 1;
+}
+
+.free {
+    border: 1px solid #eee;
+}
+
+.premium {
+    border: 2px solid #3FDBB1;
+}
+
+.recommended {
+    background-color: #F7941D;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    position: absolute;
+    top: 1rem;
+}
+
+.plan-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.plan-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    font-family: 'DM Sans';
+}
+
+.plan-desc {
+    color: #666;
+    margin: 0.25rem 0 0;
+    font-family: 'DM Sans';
+}
+
+.price {
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+    white-space: nowrap;
+    font-family: 'DM Sans';
+}
+
+.pricesmain {
+    font-weight: 700;
+    font-size: 26px;
+    font-family: 'DM Sans';
+    color: #25CB9E;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.features li {
+    margin-bottom: 30px;
+    font-size: 0.95rem;
+    display: flex;
+    gap: 10px;
+}
+
+.features .disabled {
+    color: #bbb;
+}
+
+.features .icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.action-button {
+    width: 100%;
+    background-color: #ffe9d5;
+    color: #F7941D;
+    border: none;
+    padding: 0.75rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    .plans {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan-title {
+        font-size: 1.5rem;
+    }
+}

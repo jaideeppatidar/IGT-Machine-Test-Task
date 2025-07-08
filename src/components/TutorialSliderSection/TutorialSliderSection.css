@@ -1,0 +1,173 @@
+.tutorial-section {
+    position: relative;
+    padding: 60px 5%;
+    background: #fff;
+}
+
+.slider-content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+    justify-content: space-evenly;
+    background-image: url('../../assets/images/Group.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    gap: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+.slider-left {
+    flex: 1;
+    min-width: 340px;
+    max-width: 600px;
+    position: relative;
+    padding: 20px 0;
+}
+
+.card.small {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.card-img.small img {
+    height: 180px;
+    object-fit: cover;
+}
+
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card-img {
+    position: relative;
+}
+
+.card-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.play-button {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    font-size: 40px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px 17px;
+    border-radius: 100%;
+    color: #fff;
+}
+
+.card-body {
+    padding: 16px;
+    align-items: left;
+}
+
+.card-rating {
+    font-size: 14px;
+    color: #f1b000;
+    display: flex;
+    align-items: left;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.card-rating span {
+    color: #333;
+}
+
+.badge {
+    background: #28c76f;
+    color: #fff;
+    padding: 4px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: auto;
+}
+
+.card-body h4 {
+    font-size: 20px;
+    margin: 10px 0 6px;
+    color: #0f2137;
+    text-align: left;
+    font-weight: 700;
+    font-family: 'DM Sans'
+}
+
+.card-body p {
+    font-size: 13px;
+    color: #231a1a;
+    text-align: left;
+}
+
+.slider-right {
+    text-align: left;
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.slider-right .label {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    color: #EF9E48;
+    margin-bottom: 8px;
+    font-family: 'DM Sans'
+
+}
+
+.slider-right h2 {
+    font-size: 48px;
+    color: #0f2137;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: 'DM Sans'
+
+}
+
+.slider-right .desc {
+    font-size: 18px;
+    color: #343d48;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-family: 'DM Sans';
+    font-weight: 400;
+
+}
+
+.slider-right .btn {
+    background: #FCF2E8;
+    color: #EF9E48;
+    padding: 20px 35px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .tutorial-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .slider-left,
+    .slider-right {
+        max-width: 100%;
+    }
+
+    .slider-right h2 {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,92 @@
+.main-header {
+  width: 100%;
+  padding: 20px 30px;
+}
+
+
+.header-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: #111;
+}
+
+.logo img {
+  height: 30px;
+  margin-right: 8px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: #111;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+}
+
+.nav-links a:hover {
+  color: #f7931e;
+}
+
+.try-btn {
+  background-color: #ffe4c3;
+  color: #f7931e;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.try-btn:hover {
+  background-color: #fdd8b0;
+}
+
+.mobile-menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .try-btn {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+}
