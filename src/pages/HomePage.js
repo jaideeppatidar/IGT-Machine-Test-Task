@@ -5,9 +5,12 @@ import Paypal from '../assets/logo/paypal.png';
 import Google from '../assets/logo/google.png';
 import DropBox from '../assets/logo/Dropbox_logo_2017.png';
 import searchIcon from '../assets/icons/Combined shape 15225.png';
+import { useState } from 'react';
 
 
 const HeroSection = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
+
   return (
     <div className="container">
       <section className="hero-section">
@@ -38,12 +41,24 @@ const HeroSection = () => {
         </div>
 
         <div className="hero-right">
-          <div className="dotted-bg">
-            <div className="image-wrapper">
-              <img src={heroImg} alt="Hero" className="hero-img" />
-            </div>
-          </div>
-        </div>
+  <div className="dotted-bg">
+    <div className="image-wrapper" onClick={() => setIsPlaying(true)}>
+      {isPlaying ? (
+        <video
+          className="hero-video"
+          src={require('../assets/video/6005666_Delivery_Fast_Food_3840x2160.mp4')}
+          autoPlay
+          controls
+          muted
+          playsInline
+        />
+      ) : (
+        <img src={heroImg} alt="Hero" className="hero-img" />
+      )}
+    </div>
+  </div>
+</div>
+
       </section>
     </div>
   );
